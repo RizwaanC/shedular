@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scheduler</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Work+Sans:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+<div class="grid-container">
+    <header class="header">
+        <div class="header-left">
+            <div class="menu-icon" onclick="openSidebar()"></div>
+            <span class="material-symbols-outlined">search</span>
+        </div>
+        <div class="header-right">
+            <span class="material-symbols-outlined">notifications</span>
+            <span class="material-symbols-outlined">mail</span>
+            <span class="material-symbols-outlined">account_circle</span>
+        </div>
+    </header>
+    <aside id="sidebar">
+        <div class="sidebar-title">
+            <div class="sidebar-brand">
+                   Lyra
+            </div>
+            <span class="material-symbols-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+            <li class="sidebar-list-item" id="dashboard">
+                <a href="javascript:void(0)" onclick="loadDashboard()"><i class="fas fa-tachometer-alt"></a>
+                <span class="material-symbols-outlined">dashboard</span> Dashboard
+            </li>
+            <li class="sidebar-list-item">
+                <span class="material-symbols-outlined">summarize</span> Reports
+            </li>
+            <li class="sidebar-list-item">
+                <span class="material-symbols-outlined">calendar_month</span> Calendar
+            </li>
+            <li class="sidebar-list-item">
+                <span class="material-symbols-outlined">monitoring</span> Statistics
+            </li>
+        </ul>
+    </aside>
+    <main class="main" id="content"></main>
+</div>
+<script src="js/scripts.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
